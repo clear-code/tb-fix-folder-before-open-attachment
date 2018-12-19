@@ -57,11 +57,11 @@ function startup(aData, aReason) {
 
       Services.console.logStringMessage('start waiting until the folder becomes ready.');
       await new Promise((aResolve, aReject) => {
-        let timer = setInterval(() => {
+        let timer = aWindow.setInterval(() => {
           Services.console.logStringMessage('waiting...');
           if (!file.exists())
             return;
-          clearInterval(timer);
+          aWindow.clearInterval(timer);
           aResolve();
         }, 200);
       });
