@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="fix-folder-before-open-attachment@clear-code.com"
                    em:name="Fix Folder before Open Attachment"
-                   em:version="0.1"
+                   em:version="0.2"
                    em:type="2"
                    em:bootstrap="true"
                    em:description="Fixes broken folder before opening attachments."
