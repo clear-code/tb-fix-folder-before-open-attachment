@@ -60,7 +60,7 @@ function startup(aData, aReason) {
         let timer = aWindow.setInterval(() => {
           Services.console.logStringMessage('waiting...');
           if (!file.exists())
-            return;
+            return aReject(new Error('the folder file is still missing.'));
           aWindow.clearInterval(timer);
           aResolve();
         }, 200);
